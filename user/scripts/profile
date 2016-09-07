@@ -1,0 +1,21 @@
+# /etc/profile
+
+# If running interactively, then
+if [ "$PS1" ] ; then
+
+    export PATH='/opt/usr/sbin:/opt/usr/bin:/opt/sbin:/opt/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin'
+    export HOSTNAME=`/bin/hostname`
+    export TERMINFO=/usr/share/terminfo
+    export TERM=xterm
+    export LD_LIBRARY_PATH=/lib:/etc_ro/lib:/opt/lib
+    export LANG='en_US.UTF-8'
+    export LC_ALL='en_US.UTF-8'
+    export PS1='\[\033[35;1m\]\u\[\033[0m\]@\[\033[31;1m\]\h \[\033[32;1m\]$PWD\[\033[0m\] [\[\033[35m\]\$\[\033[0m\]] '
+
+fi;
+
+    alias ls='ls --color=auto -F'
+    alias dir='ls --color=auto -lAhF'
+    alias ll='ls --color=auto -lAhFe'
+
+[ -r /opt/etc/profile ] && . /opt/etc/profile
