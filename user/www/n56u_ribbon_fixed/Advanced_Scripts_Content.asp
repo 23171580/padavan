@@ -122,6 +122,7 @@ function done_validating(action){
                                         </tr>
                                         <tr>
                                             <td>
+												<span class="icon-hand-right"></span>
                                                 <a href="javascript:spoiler_toggle('script0')"><span><#RunPreStart#></span></a>
                                                 <div id="script0" style="display:none;">
                                                     <textarea rows="24" wrap="off" spellcheck="false" maxlength="4096" class="span12" name="scripts.start_script.sh" style="font-family:'Courier New'; font-size:12px;"><% nvram_dump("scripts.start_script.sh",""); %></textarea>
@@ -130,6 +131,7 @@ function done_validating(action){
                                         </tr>
                                         <tr>
                                             <td>
+												<span class="icon-hand-right"></span>
                                                 <a href="javascript:spoiler_toggle('script1')"><span><#RunPostStart#></span></a>
                                                 <div id="script1" style="display:none;">
                                                     <textarea rows="24" wrap="off" spellcheck="false" maxlength="8192" class="span12" name="scripts.started_script.sh" style="font-family:'Courier New'; font-size:12px;"><% nvram_dump("scripts.started_script.sh",""); %></textarea>
@@ -138,6 +140,7 @@ function done_validating(action){
                                         </tr>
                                         <tr>
                                             <td>
+												<span class="icon-hand-right"></span>
                                                 <a href="javascript:spoiler_toggle('script5')"><span><#RunShutdown#></span></a>
                                                 <div id="script5" style="display:none;">
                                                     <textarea rows="24" wrap="off" spellcheck="false" maxlength="4096" class="span12" name="scripts.shutdown_script.sh" style="font-family:'Courier New'; font-size:12px;"><% nvram_dump("scripts.shutdown_script.sh",""); %></textarea>
@@ -146,6 +149,7 @@ function done_validating(action){
                                         </tr>
                                         <tr id="row_post_wan_script">
                                             <td>
+												<span class="icon-hand-right"></span>
                                                 <a href="javascript:spoiler_toggle('script2')"><span><#RunPostWAN#></span></a>
                                                 <div id="script2" style="display:none;">
                                                     <textarea rows="24" wrap="off" spellcheck="false" maxlength="8192" class="span12" name="scripts.post_wan_script.sh" style="font-family:'Courier New'; font-size:12px;"><% nvram_dump("scripts.post_wan_script.sh",""); %></textarea>
@@ -154,6 +158,7 @@ function done_validating(action){
                                         </tr>
                                         <tr id="row_post_iptables_script">
                                             <td>
+												<span class="icon-hand-right"></span>
                                                 <a href="javascript:spoiler_toggle('script3')"><span><#RunPostFWL#></span></a>
                                                 <div id="script3" style="display:none;">
                                                     <textarea rows="24" wrap="off" spellcheck="false" maxlength="8192" class="span12" name="scripts.post_iptables_script.sh" style="font-family:'Courier New'; font-size:12px;"><% nvram_dump("scripts.post_iptables_script.sh",""); %></textarea>
@@ -162,6 +167,7 @@ function done_validating(action){
                                         </tr>
                                         <tr>
                                             <td style="padding-bottom: 0px;">
+												<span class="icon-hand-right"></span>
                                                 <a href="javascript:spoiler_toggle('script4')"><span><#RunEzBtns#></span></a>
                                                 <div id="script4" style="display:none;">
                                                     <textarea rows="24" wrap="off" spellcheck="false" maxlength="4096" class="span12" name="scripts.ez_buttons_script.sh" style="font-family:'Courier New'; font-size:12px;"><% nvram_dump("scripts.ez_buttons_script.sh",""); %></textarea>

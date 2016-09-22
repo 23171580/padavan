@@ -34,7 +34,7 @@ struct nvram_pair router_defaults[] = {
 
 	/* Miscellaneous parameters */
 	{ "time_zone", DEF_TIMEZONE },
-	{ "log_float_ui", "1" },		/* WebUI syslog float panel mode */
+	{ "log_float_ui", "0" },		/* WebUI syslog float panel mode */
 	{ "log_ipaddr", "" },			/* syslog recipient IP */
 	{ "log_port", "514" },			/* syslog recipient Port */
 	{ "log_level", "0" },			/* Bitmask 0:off 1:denied 2:accepted */
@@ -511,7 +511,7 @@ struct nvram_pair router_defaults[] = {
 	{ "ddns2_ssl", "1" },
 	{ "asusddns_tos_agreement", "0" },
 
-	{ "preferred_lang", "" },
+	{ "preferred_lang", "CN" },
 
 	{ "modem_rule", "0" },
 	{ "modem_prio", "1" },
@@ -589,7 +589,7 @@ struct nvram_pair router_defaults[] = {
 
 	{ "wol_mac_last", "" },
 	{ "gw_arp_ping", "0" },
-	{ "ez_action_short", "0" },
+	{ "ez_action_short", "1" },
 #if !defined(BOARD_GPIO_BTN_RESET)
 	{ "ez_action_long", "15" },	/* Reset */
 #else
@@ -605,7 +605,7 @@ struct nvram_pair router_defaults[] = {
 #endif
 	{ "watchdog_cpu", "0" },
 	{ "front_led_all", "1" },
-	{ "front_led_wan", "2" },
+	{ "front_led_wan", "3" },
 	{ "front_led_lan", "1" },
 	{ "front_led_wif", "1" },
 	{ "front_led_usb", "1" },

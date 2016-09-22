@@ -29,7 +29,7 @@
 #define SYS_GROUP_NOGROUP	"nogroup"
 
 #define DEF_WLAN_2G_CC		"CN"
-#define DEF_WLAN_5G_CC		"CN"
+#define DEF_WLAN_5G_CC		"US"
 #define DEF_WLAN_2G_SSID	"PHICOMM"
 #define DEF_WLAN_5G_SSID	"PHICOMM_5G"
 #define DEF_WLAN_2G_GSSID	"PHICOMM_GUEST"

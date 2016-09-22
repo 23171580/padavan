@@ -254,6 +254,7 @@ function done_validating(action){
                                         </tr>
                                         <tr>
                                             <td colspan="2" style="padding-bottom: 0px;">
+											<span class="icon-hand-right"></span>
                                                 <a href="javascript:spoiler_toggle('script3')"><span><#RunInetState#></span></a>
                                                 <div id="script3" style="display:none;">
                                                     <textarea rows="16" wrap="off" spellcheck="false" maxlength="8192" class="span12" name="scripts.inet_state_script.sh" style="font-family:'Courier New'; font-size:12px;"><% nvram_dump("scripts.inet_state_script.sh",""); %></textarea>

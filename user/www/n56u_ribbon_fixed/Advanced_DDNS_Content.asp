@@ -37,6 +37,7 @@ var ddns_prov2 = '<% nvram_get_x("","ddns2_server"); %>';
 var ddns_hname = '<% nvram_get_x("","ddns_hostname_x"); %>';
 var ddns_list = [
 	[ 0x01, "WWW.ASUS.COM",         "(asuscomm)", "" ],
+	[ 0x0f, "WWW.ORAY.COM",         "", "http://hsk.oray.com/console/manage/" ],
 	[ 0x0f, "WWW.DYNDNS.ORG",       "", "https://account.dyn.com/entrance/" ],
 	[ 0x0f, "WWW.TZO.COM",          "", "http://signup.tzo.com" ],
 	[ 0x0f, "WWW.ZONEEDIT.COM",     "", "http://www.zoneedit.com/signUp.html" ],
@@ -620,6 +621,7 @@ function checkDDNSReturnCode(){
                                                     <option value="11" <% nvram_match_x("", "ddns_checkip", "11","selected"); %>>ipv4.wtfismyip.com/text</option>
                                                     <option value="12" <% nvram_match_x("", "ddns_checkip", "12","selected"); %>>ipv4.nsupdate.info/myip</option>
                                                     <option value="13" <% nvram_match_x("", "ddns_checkip", "13","selected"); %>>myip.dtdns.com</option>
+                                                    <option value="14" <% nvram_match_x("", "ddns_checkip", "14","selected"); %>>ddns.oray.com/checkip</option>
                                                 </select>
                                             </td>
                                         </tr>

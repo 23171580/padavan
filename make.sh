@@ -13,6 +13,7 @@ function build_target()
 	echo -e "<<<开始编译时间:$STARTING>>>\n总共花费了$ELAPSED_TIME秒\n<<<编译完成时间:$COMPLETEING>>>"
 	echo -e "<<<开始编译时间:$STARTING>>>\n总共花费了$ELAPSED_TIME秒\n<<<编译完成时间:$COMPLETEING>>>" > $DATE
 }
+cp images/*.trx .
 build_target
 echo 编译结束 !!!
 exit

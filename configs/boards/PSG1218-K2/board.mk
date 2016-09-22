@@ -4,6 +4,5 @@
 # RT-AC54U  # ASUS RT-AC54U    # MT7620  #
 ##################################################################
 
-CFLAGS += -DBOARD_PSG1218-K2
-# -DVENDOR_ASUS
+CFLAGS += -DBOARD_PSG1218-K2 -DVENDOR_ASUS
 BOARD_NUM_USB_PORTS=0
