@@ -1,0 +1,12 @@
+diff -ur Python-2.7.3.orig/pyconfig.h Python-2.7.3-Source/pyconfig.h
+--- Python-2.7.3.orig/pyconfig.h 2016-09-12 13:35:44.717652824 +0800
++++ Python-2.7.3-Source/pyconfig.h 2016-09-12 13:42:28.239015203 +0800
+@@ -944,7 +944,7 @@
+ /* #undef PYLONG_BITS_IN_DIGIT */
+ 
+ /* Define to printf format modifier for long long type */
+-/* #undef PY_FORMAT_LONG_LONG */
++#define PY_FORMAT_LONG_LONG "ll"
+ 
+ /* Define to printf format modifier for Py_ssize_t */
+ #define PY_FORMAT_SIZE_T "z"
