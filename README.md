@@ -9,4 +9,6 @@ fix user/ipset compile error (Makefile):
 	    PKG_CONFIG_PATH=$(STAGEDIR)/lib/pkgconfig \
 
 add make.sh to save the compile logs;
-change WebUI language EN --> CN
+update to padavan 2016-9-16 efbdcda commit
+edit www language makefile only left CN & EN
+add tip for support Chinese SSID.
