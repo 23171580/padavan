@@ -485,7 +485,7 @@
 #define MAX_LEN_OF_KEY                  32	/* 32 octets == 256 bits, Redefine for WPA */
 /* #define MAX_NUM_OF_CHANNELS             MAX_NUM_OF_CHS */	/* 14 channels @2.4G +  12@UNII + 4 @MMAC + 11 @HiperLAN2 + 7 @Japan + 1 as NULL termination */
 #define MAX_NUM_OF_11JCHANNELS             20	/* 14 channels @2.4G +  12@UNII + 4 @MMAC + 11 @HiperLAN2 + 7 @Japan + 1 as NULL termination */
-#define MAX_LEN_OF_SSID                 32
+#define MAX_LEN_OF_SSID                 72
 #define CIPHER_TEXT_LEN                 128
 #define HASH_TABLE_SIZE                 256	/* Size of hash tab must be power of 2. */
 #define MAX_VIE_LEN                     1024	/* New for WPA cipher suite variable IE sizes. */
