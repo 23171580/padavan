@@ -4,10 +4,13 @@ CONFIG_PRODUCT=MT7620
 
 ### Target ProductID (board select, max 12 symbols)
 CONFIG_FIRMWARE_PRODUCT_ID="PSG1218-K2"
+#CONFIG_FIRMWARE_PRODUCT_ID="YK-L1"
+#CONFIG_FIRMWARE_PRODUCT_ID="NEWIFI-MINI"
 
 ### Linux kernel and toolchain
 CONFIG_LINUXDIR=linux-3.4.x
-CONFIG_TOOLCHAIN_DIR=/opt/rt-n56u/toolchain-mipsel
+###CONFIG_TOOLCHAIN_DIR=/opt/rt-n56u/toolchain-mipsel
+CONFIG_TOOLCHAIN_DIR=/home/sui/rt-n56u/toolchain-mipsel
 
 ############################################################
 ### Linux kernel configuration
