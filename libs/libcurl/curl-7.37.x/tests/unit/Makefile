@@ -296,7 +296,7 @@ CC = /home/sui/rt-n56u/toolchain-mipsel/toolchain-3.4.x/bin/mipsel-linux-uclibc-
 CCDEPMODE = depmode=gcc3
 CFLAGS = -Os -fomit-frame-pointer -pipe -DEMBED -isystem /home/sui/rt-n56u/trunk/stage/include -Dlinux -D__linux__ -Dunix -Wall -Wno-trigraphs -Wno-strict-aliasing -Wno-format-security -Wno-pointer-sign -ffunction-sections -fdata-sections -Wno-system-headers
 CFLAG_CURL_SYMBOL_HIDING = -fvisibility=hidden
-CONFIGURE_OPTIONS = " '--prefix=/home/sui/rt-n56u/trunk/stage' '--enable-static' '--disable-shared' '--disable-ipv6' '--disable-gopher' '--disable-ldap' '--disable-ldaps' '--disable-rtsp' '--disable-telnet' '--disable-tftp' '--disable-smtp' '--disable-pop3' '--disable-imap' '--disable-sspi' '--disable-dict' '--disable-ares' '--disable-debug' '--disable-curldebug' '--disable-manual' '--disable-verbose' '--disable-tls-srp' '--disable-libcurl-option' '--disable-threaded-resolver' '--without-gnutls' '--without-ca-bundle' '--without-libidn' '--without-libssh2' '--without-krb4' '--without-nss' '--with-random=/dev/urandom' '--with-zlib=/home/sui/rt-n56u/trunk/stage' '--with-ssl=/home/sui/rt-n56u/trunk/stage' '--host=mipsel-linux' '--build=x86_64-pc-linux-gnu' 'build_alias=x86_64-pc-linux-gnu' 'host_alias=mipsel-linux' 'CC=/home/sui/rt-n56u/toolchain-mipsel/toolchain-3.4.x/bin/mipsel-linux-uclibc-gcc -mips32r2 -march=mips32r2' 'CFLAGS=-Os -fomit-frame-pointer -pipe  -DEMBED -I/home/sui/rt-n56u/trunk/stage/include -Dlinux -D__linux__ -Dunix -Wall -Wno-trigraphs -Wno-strict-aliasing -Wno-format-security   -Wno-pointer-sign -ffunction-sections -fdata-sections' 'LDFLAGS=-L/home/sui/rt-n56u/trunk/stage/lib -Wl,--gc-sections'"
+CONFIGURE_OPTIONS = " '--prefix=/home/sui/rt-n56u/trunk/stage' '--enable-static' '--disable-shared' '--enable-ipv6' '--disable-gopher' '--disable-ldap' '--disable-ldaps' '--disable-rtsp' '--disable-telnet' '--disable-tftp' '--disable-smtp' '--disable-pop3' '--disable-imap' '--disable-sspi' '--disable-dict' '--disable-ares' '--disable-debug' '--disable-curldebug' '--disable-manual' '--disable-verbose' '--disable-tls-srp' '--disable-libcurl-option' '--disable-threaded-resolver' '--without-gnutls' '--without-ca-bundle' '--without-libidn' '--without-libssh2' '--without-krb4' '--without-nss' '--with-random=/dev/urandom' '--with-zlib=/home/sui/rt-n56u/trunk/stage' '--with-ssl=/home/sui/rt-n56u/trunk/stage' '--host=mipsel-linux' '--build=x86_64-pc-linux-gnu' 'build_alias=x86_64-pc-linux-gnu' 'host_alias=mipsel-linux' 'CC=/home/sui/rt-n56u/toolchain-mipsel/toolchain-3.4.x/bin/mipsel-linux-uclibc-gcc -mips32r2 -march=mips32r2' 'CFLAGS=-Os -fomit-frame-pointer -pipe  -DEMBED -I/home/sui/rt-n56u/trunk/stage/include -Dlinux -D__linux__ -Dunix -Wall -Wno-trigraphs -Wno-strict-aliasing -Wno-format-security   -Wno-pointer-sign -ffunction-sections -fdata-sections' 'LDFLAGS=-L/home/sui/rt-n56u/trunk/stage/lib -Wl,--gc-sections'"
 CPP = /home/sui/rt-n56u/toolchain-mipsel/toolchain-3.4.x/bin/mipsel-linux-uclibc-gcc -mips32r2 -march=mips32r2 -E
 CPPFLAGS = -I/home/sui/rt-n56u/trunk/stage/include -I//include
 CPPFLAG_CURL_STATICLIB = -DCURL_STATICLIB
@@ -345,7 +345,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-IPV6_ENABLED = 
+IPV6_ENABLED = 1
 LD = /home/sui/rt-n56u/toolchain-mipsel/toolchain-3.4.x/bin/mipsel-linux-uclibc-ld
 LDFLAGS = -L/home/sui/rt-n56u/trunk/stage/lib -Wl,--gc-sections -L/home/sui/rt-n56u/trunk/stage/lib -L//lib
 LIBCURL_LIBS = -lssl -lcrypto -lssl -lcrypto -lz
@@ -393,7 +393,7 @@ SET_MAKE =
 SHELL = /bin/bash
 SSL_ENABLED = 1
 STRIP = /home/sui/rt-n56u/toolchain-mipsel/toolchain-3.4.x/bin/mipsel-linux-uclibc-strip
-SUPPORT_FEATURES = SSL libz NTLM NTLM_WB
+SUPPORT_FEATURES = SSL IPv6 libz NTLM NTLM_WB
 SUPPORT_PROTOCOLS = FILE FTP FTPS HTTP HTTPS
 USE_ARES = 
 USE_AXTLS = 

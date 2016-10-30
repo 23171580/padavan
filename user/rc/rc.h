@@ -174,7 +174,7 @@ char *mac_conv(const char *mac_nvkey, int idx, char *buf);
 char *mac_conv2(const char *mac_nvkey, int idx, char *buf);
 void get_eeprom_params(void);
 //void char_to_ascii(char *output, char *input);
-void char_to_asciichar_to_ascii(char *output, uint8_t *input);
+void char_to_ascii(char *output, uint8_t *input);
 unsigned int get_param_int_hex(const char *param);
 void load_user_config(FILE *fp, const char *dir_name, const char *file_name, const char **forbid_list);
 int is_module_loaded(const char *module_name);
@@ -184,8 +184,6 @@ int module_smart_unload(const char *module_name, int recurse_unload);
 int module_param_get(const char *module_name, const char *module_param, char *param_value, size_t param_value_size);
 int module_param_set_int(const char *module_name, const char *module_param, int param_value);
 void oom_score_adjust(pid_t pid, int oom_score_adj);
-void set_cpu_affinity(int is_ap_mode);
-void set_vpn_balancing(const char *vpn_ifname);
 void mount_rwfs_partition(void);
 void umount_rwfs_partition(void);
 void start_rwfs_optware(void);
@@ -667,6 +665,15 @@ void notify_watchdog_wifi(int is_5ghz);
 int inicd_main(int argc, char *argv[]);
 int start_inicd(void);
 int stop_inicd(void);
+#endif
+
+#if defined (USE_SMP)
+/* smp.c */
+void set_cpu_affinity(int is_ap_mode);
+void set_vpn_balancing(const char *vpn_ifname);
+#else
+#define set_cpu_affinity(x)
+#define set_vpn_balancing(ptr)
 #endif
 
 /* rstats.c */
